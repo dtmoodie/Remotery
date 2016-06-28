@@ -253,7 +253,7 @@ typedef enum rmtError
 // Can call remotery functions on a null pointer
 // TODO: Can embed extern "C" in these macros?
 
-#define rmt_Settings()																\
+#define rmt_Settings()                                                                \
     RMT_OPTIONAL_RET(RMT_ENABLED, _rmt_Settings(), NULL )
 
 #define rmt_CreateGlobalInstance(rmt)                                               \

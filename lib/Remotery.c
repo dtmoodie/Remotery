@@ -74,7 +74,7 @@
 #include <linux/ashmem.h>
 #include <fcntl.h>
 #include <string.h>
-#define ASHMEM_DEVICE	"/dev/ashmem"
+#define ASHMEM_DEVICE    "/dev/ashmem"
 
 /*
  * ashmem_create_region - creates a new ashmem region and returns the file
@@ -1298,7 +1298,7 @@ static const char* hex_encoding_table = "0123456789ABCDEF";
 static void itoahex_s( char *dest, rsize_t dmax, rmtS32 value )
 {
     rsize_t len;
-    rmtS32	halfbytepos;
+    rmtS32    halfbytepos;
 
     halfbytepos = 8;
 
