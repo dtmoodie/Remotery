@@ -1,4 +1,4 @@
-
-add_definitions(-DRMT_DLL)
+include_directories(lib)
 add_definitions(-DRMT_USE_CUDA)
-add_library(remotery SHARED lib/Remotery.h lib/Remotery.c)
+add_library(Remotery SHARED lib/Remotery.c)
+set_target_properties(Remotery PROPERTIES COMPILE_DEFINITIONS RMT_DLL)
